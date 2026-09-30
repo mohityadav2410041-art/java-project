@@ -42,12 +42,4 @@ public class Account {
     void addTransaction(String type, double amount) {
         transactions.add(type + ": Rs" + amount + " | Balance: Rs" + balance);
     }
-
-    void showHistory() {
-        System.out.println("\n Account Transaction History " + number);
-        for (String t : transactions) {
-            System.out.println(t);
-        }
-        System.out.println("Current Balance: Rs" + balance + "\n");
-    }
 }
